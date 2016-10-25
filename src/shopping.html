@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">	
+		<title>购物车</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/shopping.css" />
+<script src="assets/jquery-1.12.0.js"></script>	
+
+<script src="assets/bootstrap.js"></script>
+<script type="text/javascript" src="js/mycookie.js" ></script>
+<script type="text/javascript" src="js/shopping.js" ></script>
+	</head>
+	<body>
+<div class="container-fluid">	
+<div id="intop">
+<div id="indl">
+<div id="indll">
+<ul>
+<li><a href="#" target="_blank">电视直播</a></li>
+<li><a href="#" target="_blank">电子型录</a></li>
+<li style="background: none"><a href="#" target="_blank">购物专家</a></li>
+</ul>
+</div>
+<div id="indlr">
+<dl>
+<dt>
+您好，欢迎来到宜佳商城！</dt>
+<dd>
+<a href="login.html">[注册]</a>
+<a href="login.html">[登录]</a>
+</dd>
+</dl>
+<ul>
+<li><a href="#">我的订单</a></li>
+<li><a href="#">商城积分</a></li>
+<li><a href="#">帮助中心</a></li>
+<li><a href="#" onclick="fn()">收藏宜佳</a></li>
+</ul>
+</div>
+</div>
+
+<div id="logo" style="clear: both">
+<div id="log">
+<a href="#">
+<img src="img/new_logo.gif"/></a>
+</div>
+<div id="mer">
+<a href="#" target="_blank">
+<img src="img/easygo_merchant.jpg" /></a></div>
+
+<div id="ser">
+<dl>
+<dt>
+<input name="ctl00$header1$txt_keywords" type="text" id="ctl00_header1_txt_keywords" class="tx" value="搜索关键词" onfocus="this.value=&#39;&#39;" onkeydown="if (event.keyCode == 13) { window.location.href=&#39;../search/s.aspx?keywords=&#39;+this.value;return false;}" />
+</dt>
+<dd>
+<a href="#" onclick="doSearch();" id="searchclick">
+    <img src="img/ss.gif" /></a>
+</dd>
+</dl>
+<p>
+热门搜索： <span class="ft1"><a href="#" target="_blank"
+style="">腕表</a> </span><a href="#" target="_blank">
+    &nbsp;床品</a> <a href="#" target="_blank">
+        &nbsp;面包机</a> <a href="#" target="_blank">
+            &nbsp;炒锅</a> <a href="#" target="_blank">
+                &nbsp;套组</a>
+</p>
+</div>
+
+<div id="weixin">
+<img src="img/lnWX.png" alt="#" id="updatewx"></div>
+<div id="gwc">
+<dl>
+<dt id="headercartproductcount">
+0</dt>
+<dd>
+<a href="shopping.html" >去购物车结算</a></dd>
+</dl>
+</div>
+</div>
+
+<div id="menu">
+<dl style="position: relative; z-index: 9999;">
+<div id="menudiv" style="z-index: 9999;">
+<p style="cursor: pointer;">
+全部商品分类</p>
+<script>
+var arr=['首页','家居百货','3C数码','精品家电','时尚生活','宜佳旅游','限时秒杀']
+var $md=$('#menu  dl');
+//console.log($md);
+$.each(arr,function(idx){
+	var $oa=$('<a href="#" />');	
+	var $dt=$('<dt/>');	
+	//console.log($oa,$dt);
+	$oa.html(arr[idx]).appendTo($dt);
+	$dt.css({'lineHeight':'40px','fontSize':'14px'}).appendTo($md);
+});
+$md.find("dt").eq(0).children("a").attr("href","index.html");
+
+$md.find("dt").eq(2).children("a").attr("href","index1.html");
+$('<dd/>').css({
+	float: 'right',
+    fontSize: '14px',
+    fontWeight:' bold',
+    background: 'url(img/li1.gif) no-repeat right top',
+    paddingRight: '15px',
+	lineHeight:'40px'}).html('在线客服').addClass('ft2').appendTo($md);
+		</script>
+</div>
+</div>
+</div>
+<div class="row-fluid" style="clear: both;">
+	<h1>我的购物车</h1>
+	<ul id="plist">
+		  
+	</ul>
+</div>
+<div id="footHeader">
+    <div id="kslj">
+        <dl>
+            <dt>购物指南</dt><dd>
+                <a href="#" target="_blank">购物流程</a><br>
+                <a href="#" target="_blank">常见问题</a><br>
+                <a href="#" target="_blank">订单状态</a><br>
+                <a href="#" target="_blank">会员介绍</a></dd></dl>
+        <dl>
+            <dt>配送方式</dt><dd><a href="#" target="_blank">配送方式</a><br>
+                <a href="#" target="_blank">配送范围</a><br>
+                <a href="#" target="_blank">配送费用</a><br>
+                <a href="#" target="_blank">配送时间</a></dd></dl>
+        <dl>
+            <dt>支付方式</dt><dd><a href=href="#" target="_blank">货到付款</a><br>
+                <a href="#" target="_blank">刷卡服务</a><br>
+                <a href="#" target="_blank">分期付款</a><br>
+                <a href="#" target="_blank">支付宝支付</a></dd></dl>
+        <dl>
+            <dt>售后服务</dt><dd><a href="#" target="_blank">验货与签收</a><br>
+                <a href="#" target="_blank">购物保障</a><br>
+                <a href="#" target="_blank">退换货方式</a><br>
+                <a href="#" target="_blank">退换货流程</a></dd></dl>
+        <dl>
+            <dt>客服中心</dt><dd><a href="/userCenter/User_Order.aspx" target="_blank">订单查询</a><br>
+                <a href="#" target="_blank">投诉建议</a><br>
+                <a href="#" target="_blank">电话客服</a><br>
+                <a href="#" target="_blank">在线客服</a></dd></dl>
+        <dl>
+            <dt>关于我们</dt><dd><a href="#" target="_blank">公司概况</a><br>
+                <a href="#" target="_blank">联系我们</a></dd>
+            <dd>
+                <a href="#">网站地图</a></dd>
+        </dl>
+        <dl>
+            <dd>
+                <a href="#" target="_blank">
+                    <img src="css/img/in_wb.gif"></a></dd>
+            <dd>
+                <img src="css/img/in_dh.gif"></dd></dl>
+    </div>
+    <div id="kouhao">
+        <img src="img/in_kh.jpg" /></div>
+    <div id="footer">
+        
+        本站域名： <a href="http://www.yjgo.com.cn" target="_blank">www.yjgo.com.cn</a> | 地址：辽宁省沈阳市和平区文化路79号<br />
+        ©2005-2013 辽宁宜佳电视购物有限公司 版权所有，并保留所有权利。
+        <br />
+        辽ICP备12015716号-2 <br>
+        Tel:400-688-8499 | 招商热线：23186680 23186681 | 团购热线：23181390 | 售后热线：400-688-6611</div>
+</div>
+
+        </div>
+      <div class="nextpage">           
+            <div id="dbpf">
+                <div id="dbpf1">
+                    <ul>
+                        <li><a href="#">
+                            <img src="img/in_wdjf.gif"></a></li>
+                        <li><a href="#">
+                            <img src="img/in_wddd.gif"></a></li>
+                        <li><a href="#">
+                            <img src="img/in_wdgwd.gif"></a></li>
+                        <li>
+                            <img src="img/in_wyyw.gif" onclick="displaydiv('helpdiv'); return false;" style="cursor: pointer;"
+                                border="0" alt="我有疑问"></li>
+                        <li><a href="#" style="padding: 0; margin: 4px 0 4px 4px;">
+                            <img src="img/new_in_top.gif" alt="返回顶部"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+	</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">	
+		<title>详情页面</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/detail.css" />
+<script src="assets/jquery-1.12.0.js"></script>	
+<script src="assets/bootstrap.js"></script>
+<script type="text/javascript" src="js/mycookie.js" ></script>
+<script type="text/javascript" src="js/jquery.lxzoom.js" ></script>
+<script src="js/detail.js" ></script>
+<script>
+$(function(){
+//插入HTML	
+	$("<div/>").load("header.html",function(){
+		$(this).insertBefore(".row-fluid");
+	});
+	$("<div/>").load("footer.html",function(){
+		$(this).insertAfter(".row-fluid");
+	});
+});	
+</script>
+	</head>
+	<body>
+<div class="container-fluid">
+<div class="row-fluid" style="clear: both;">
+
+
+<div class="navpath_plug-in">
+        <div class="navpath">
+            <span><A class=nvitxt href='#'>精品家电</a></span><span><a  href='/prod/list.aspx?ka=jpjd&kb=cfdq'>厨房电器</a></span><span><a href='/product/brandCategory.aspx?brand='></a></span><span>7.21清货 CLARA无油空气炸锅</span>
+        </div>
+        <div class="plug-in">
+            <div style="position: relative; float: right; padding: 3px 0;">
+                <!-- JiaThis Button BEGIN -->
+                <div id="ckepop">
+                    <span class="jiathis_txt">分享到：</span> <a class="jiathis_button_tqq"></a><a class="jiathis_button_tsina">
+                    </a><a class="jiathis_button_renren"></a><a class="jiathis_button_kaixin001"></a>
+                    <a href="#" class="jiathis jiathis_txt jtico jtico_jiathis"
+                        target="_blank"></a><a class="jiathis_counter_style"></a>
+                </div>
+                <!-- JiaThis Button END -->
+            </div>
+        </div>
+    </div>
+<input type="hidden" name=" ProductType" value="PRIMARY" />
+<input type="hidden" name=" ShopId"/>
+<input name=" baseprice" type="hidden" size="1" />
+<input name=" webprice" type="hidden"  size="1" />
+<input name=" shipper" type="hidden" size="1" />
+<input name=" hOvs" type="hidden" />
+<div class="ndetl_01">
+    <div class="a">
+        <div class="pimgs lxzoom"  id="box" >
+        	<img src="css/img/big2.jpg" width="332px" height="332px"/>           
+        </div>
+        <div id="divSmallPic" class="pimgs_ico">
+            <div class="infiniteCarousel">
+                <div class="wrapper" style="overflow:hidden;">
+                    <ul id="ulSmallPic">
+                    	
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ndetl" style="float:left">
+    <div class="pname_promise">
+        <div class="pname" style="padding:8px 0 0 0">
+            <h1>
+                7.21清货 CLARA无油空气炸锅</h1>
+            <span>品号：<em>
+                150848
+            </em></span><span>品牌：</span>
+            <p></p>
+        </div>
+        <div class="promise" style="padding:4px 0 0 0">
+            <ul>
+                <li><a href="#" target="_blank" title="正品保证 商品三包">
+                    <img src="css/img/RTcnico_07.gif" alt="正品保证 商品三包"></a></li>
+                <li><a href="#" target="_blank" title="货到上门 验货付款">
+                    <img src="css/img/RTcnico_09.gif" alt="货到上门 验货付款"></a></li>
+                <li><a href="#" target="_blank" title="发票随包裹寄上">
+                    <img src="css/img/RTcnico_11.gif" alt="发票随包裹寄上"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="b">
+        <div class="pdesc_a">
+            <div class="price_org">
+                
+                
+            </div>
+            <div class="price_now">
+                <p><font>宜佳售价：</font><span id='p_WebPrice'>¥358</span></p>
+            </div>
+            
+            
+            
+            
+            <div class="points"> 
+             <span><b>您可获赠3积分</b></span><span>&nbsp;</span><span><font>该积分可以当钱花呦！</font></span>
+             <span><a href="#">怎样获取积分？</a></span>
+           </div>
+            <!--ad-start-->
+            
+            <!--ad-over-->
+        </div>
+        <div class="pdesc_b">
+            <div>
+                <p>
+                    <font>选择颜色：</font><span id="spanColor"></span></p>
+                <input type="hidden" id="hidColorCode" name="hidColorCode" />
+                <input type="hidden" id="hidColorDesc" name="hidColorDesc" />
+            </div>
+            <div class="select_size_color" id="ulColor">
+                <input type="hidden" name=" hidvideostate" value="2" />
+                <input type="hidden" name=" hdshop_item_code" />
+                <input type="hidden" name=" hdshop_id"/>
+            </div>
+            <div id="sizeSectionControl">
+                <p>
+                    <font>选择尺寸：</font><span id="spanSize"></span></p>
+                <input type="hidden" name="hidSizeCode" />
+                <input type="hidden" name="hidSizeDesc" />
+            </div>
+            <div class="select_size_color" id="ulSize">
+            </div>
+        </div>
+        <span class="buy01">
+                    <a href="#" title="直接购买"></a></span> 
+         <span class="buy02">
+                    <a href="javascript:void(0)" title="加入购物车"></a></span> 
+
+        <div class="pdesc_c">
+            
+            <div>
+                <p>
+                    <font>付款：</font><span id="PaymentType"></span></p>
+            </div>
+            <div class="p_stock">
+                <p>
+                    <font>库存：</font></p>
+                
+                
+                <p id="lbl_OVS" style="display: none">
+                    <span>有货</span></p>
+                <p id="spProduct" style="display: none">
+                    <span>现货</span></p>
+                <p id="noproduct" style="display: block">
+                    <span id="txtNoProduct">无货</span> <span id="lbl_QH">
+                    <a id="ctl00_cpContent_ChooseProduct1_lbtnQh" title="到货通知" href="javascript:__doPostBack(&#39; lbtnQh&#39;,&#39;&#39;)">► 到货通知</a>
+                    </span>
+                </p>
+              <p id="freeshoppingicon"><span><img src="css/img/buyfsico.gif" alt="订购免运费"/></span></p>
+                <p class="product_span" style="padding-left:5px;"  id="sp_warehouse_desc"></p>
+            </div>
+            <div class="buy_num">
+                <p>
+                    <font>购买：</font><span><input name=" txtQuantity" type="text" id="ctl00_cpContent_ChooseProduct1_txtQuantity" value="1" /></span><em>件</em><i id="itemcolorsize">已选：白色，38</i></p>
+            </div>
+        </div>
+    </div>
+    <div class="c">
+        <div id="ctl00_cpContent_ChooseProduct1_divBrand" class="p_ppzxlogo" style="display:none;">
+            <font>您正在光顾的品牌馆：</font> <span>
+             
+            </span>
+        </div>
+	
+</div>
+</div>
+	
+<div style="width:1004px;border:solid 1px #ddd;border-bottom:0 none;margin-top:16px;position:relative;">
+	<div style="width:50px;height:48px;display:block;position:absolute;right:0;top:-16px;"></div>
+<div style="padding:20px 14px 8px 14px;border-bottom:solid 1px #ddd;">
+<p style="color:#630;font-size:14px;padding-bottom:8px;">
+(1)<font color="red">每单立减15元,1.5倍积分</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宜佳购物网上商城在线购买商品，可享受<font color="red">每单立减15元</font>优惠（每单金额200元以上参加活动,立减15的优惠金额在下单时可见），并可享受<font color="red">1.5倍积分</font>。
+<br/>
+(2)在线购物更便宜，积分天天当钱花。<font color="red">全线商品支持积分抵现</font>（仅限网站订购）。
+<br />
+(3)<font color="red">订单优惠小攻略</font>：建议每个超过200元的商品单独下单，这样就可享受到每单立减15的优惠了！！
+
+</p>
+</div>
+<div width="694" height="9"></td>
+	<td  width="27" height="9"></td></tr></table></div></div>
+            
+            
+            <!--ad-over-->
+            <div class="detail_tag"> 
+                <div id="ctl00_cpContent_upTag">
+	
+                          <div id="tabs">
+                                <div id="stickyRoll" style="z-index: 1px;">
+                              <ul class="newtag">
+                                <li><a href="#t_lbtnDesc" class="dq">商品描述</a></li>
+                                <li><a href="#t_lbtnComment">顾客评论</a></li>
+                                <li><a href="#t_lbtnAsk">买家问答</a></li>
+                                <li><a href="#t_lbtnSub">配送范围、支付方式、售后服务</a></li>
+                                <li><a href="#t_lbtnOrderlogs">最近订购记录</a></a></li>
+                              </ul>
+                              </div>
+                              <div id="t_lbtnDesc">
+                              <div id="ctl00_cpContent_tagDesc" class="review_qa_form">
+                            <div class="newtagcont">
+                                
+                                
+                                <div id="ctl00_cpContent_ProductDesc2"><p class="MsoNormal" style="margin: 0cm 0cm 0pt"><strong>产品介绍：<br/> </strong></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt">&nbsp;</p><p class="MsoNormal" style="margin: 0cm 0cm 0pt"><strong>包装清单：</strong></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt">空气炸锅 数量: 1</p><p class="MsoNormal" style="margin: 0cm 0cm 0pt">保修卡 数量: 1<br/>食物夹 数量: 1<br/>说明书 数量: 1<br/>食谱 数量: 1<br/><br/></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt"><strong>功能说明（技术参数）：</strong></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt">1、组合商品说明: CLARA无油空气炸锅<br/>2、配件:产品主体*1、食谱*1、食物夹*1、说明书*1、保修卡*1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br/>3、型号：CLR-130B<br/>4、尺寸:360*340*365mm（包装尺寸）<br/>5、重量: 净重/毛重（KG）：4.5kg/6kg<br/>6、颜色:白色<br/>7、材质: 耐高温PP材质 &nbsp;<br/><br/></p><p class="MsoNormal" style="margin: 0cm 0cm 0pt">&nbsp;</p><p class="MsoNormal" style="margin: 0cm 0cm 0pt">&nbsp;</p></div>
+                                <div class="moreprdpic">
+                                    
+                                            <img src='http://www.yjgo.com.cn/product/prodimg/xxxl/150848_00_00.jpg'
+                                                alt='7.21清货 CLARA无油空气炸锅' border="0" />
+                                        
+                                            <img src='http://www.yjgo.com.cn/product/prodimg/xxxl/150848_00_01.jpg'
+                                                alt='7.21清货 CLARA无油空气炸锅' border="0" />
+                                        
+                                </div>
+                            </div>
+                        </div>
+                              </div>
+                              <div id="t_lbtnComment">
+                              <div id="ctl00_cpContent_tagComment" class="review_qa_form">
+                            <div class="newtagcont">
+                                <div class="rqftitle">
+                                    <h3>
+                                        顾客评论</h3>
+                                    <span>共<font>0</font> 条记录
+                                        (订购过此商品才能评论)</span>
+                                    <div style="width:600px;">
+                                        <input type="submit" name="ctl00$cpContent$comment" value="发表评论" id="ctl00_cpContent_comment" /><span id="ctl00_cpContent_spanComment" style="float: right;"> 对<strong>7.21清货 CLARA无油空气炸锅</strong>作出评论，可获得1元积分</span>
+                                        <a name="comment" id="comment_m"></a>
+                                    </div>
+                                </div>
+                                
+                                <div align="right" style="width: 100%">
+                                    
+                                </div>
+                                <div class="clear">
+                                </div>
+                            </div>
+                        </div>
+                              </div>
+                              <div id="t_lbtnAsk">
+                              
+                           
+                                
+                                </div>
+                            </div>
+                        
+                              </div>
+                              </div>
+                               
+                               
+                        </div>                    
+                        
+                    
+</div>
+            </div>
+        </div>
+    </div>	
+</div>
+</div>
+	</body>
+</html>

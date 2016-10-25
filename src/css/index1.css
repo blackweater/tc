@@ -1,0 +1,189 @@
+/*主体内容*/
+
+.content1{margin:8px auto;width:1200px;overflow: hidden;}
+#c-left{width:188px;float: left;}
+#c-right{width:990px;float: right;}
+#gwc{line-height: 20px;}
+
+.box{width: 188px;float: left;
+	border: 1px solid #ffeaea; min-height: 1px;border-radius: 0 0 2px 2px;border-top:none;
+margin:8px;}
+.box a{text-decoration: none;}
+.t1{background:#ed969a;height:2px;overflow:hidden;}
+.ctitle{background:  #fff0f1; height: 34px;}
+.ctitle a {
+padding: 8px 16px;display:block;font-family:"微软雅黑","Microsoft YaHei";background: #fff0f1;
+ height: 18px;color: #aa0009;   font-size: 15px;   font-weight: bold;}
+ .sublist dt a {
+   	padding: 4px 16px;
+    display: block;
+    font-size: 13px;
+    height:25px;
+}
+.sublist dd a { height:24px;
+   	padding: 4px 24px;
+    display: block;
+    font-size: 10px;
+}
+.comment a img{
+    width: 50px;
+    display: block;
+    float: left;
+}
+.star em {
+    width: auto;
+    display: block;
+    background: url(img/prds_detail_42.png) repeat-x 0px 0px;
+    HEIGHT: 18px;
+}
+.comment {
+	LIST-STYLE-TYPE: none; DISPLAY: block
+}
+.comment LI {
+	LIST-STYLE-TYPE: none; DISPLAY: block
+}
+.comment LI {
+	BORDER-BOTTOM: #fafafa 1px solid; PADDING-BOTTOM: 8px; MARGIN: 0px 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 8px
+}
+.comment A {
+	DISPLAY: block; CLEAR: both; OVERFLOW: hidden; _height: 30px; _overflow: visible
+}
+.comment A:hover {
+	CURSOR: pointer; TEXT-DECORATION: none
+}
+.comment A:hover .desc {
+	COLOR: #06c; TEXT-DECORATION: underline
+}
+.comment A IMG {
+	WIDTH: 50px; DISPLAY: block; FLOAT: left
+}
+.comment A P.p1 {
+	PADDING-LEFT: 8px; WIDTH: 112px; DISPLAY: block; FLOAT: left
+}
+.comment P SPAN {
+	DISPLAY: block
+}
+.comment P .price {
+	FONT-STYLE: normal; COLOR: #aa0009; FONT-SIZE: 12px; FONT-WEIGHT: bold;padding: 6px;
+}
+.comment .star {
+	PADDING-LEFT: 58px
+}
+.star {
+	DISPLAY: block; HEIGHT: 18px; COLOR: #999
+}
+.star font {
+	WIDTH: 65px; DISPLAY: block; BACKGROUND: url(img/prds_detail_42.png) repeat-x 0px 0px; FLOAT: left; HEIGHT: 18px
+}
+.star I {
+	FONT-STYLE: normal; DISPLAY: block; FLOAT: left; HEIGHT: 18px
+}
+.star I A {
+	MARGIN: 0px; DISPLAY: inline; COLOR: #0066cc
+}
+.star I A:hover {
+	COLOR: #0066cc; TEXT-DECORATION: underline
+}
+.comment P .user {
+	PADDING-TOP: 4px
+}
+.comment P .user A {
+	COLOR: #999
+}
+.comment P .user A:hover {
+	COLOR: #06c; TEXT-DECORATION: underline
+}
+.comment P .comment {
+	COLOR: #999; MAX-HEIGHT: 36px; OVERFLOW: hidden; _height: 36px
+}
+.mod-list{margin-bottom: 8px;margin-top:8px ;}
+.mod-list .inr{border: 1px solid #ffeaea;border-top: none;}
+.mod-list .hd{background:#fff0f1;padding: 8px 16px;font-size: 15px;height: 34px;
+color:#aa0009;font-weight: bold;}
+.newfilter1{margin: 8px 8px 0;display: block;}
+.newfilter1 li{border-bottom:1px solid #fafafa;padding-bottom: 4px;
+margin: 4px;}
+.newfilter1 dl{padding-left:68px;position: relative;overflow: hidden;}
+.newfilter1 dt {position: absolute; padding: 2px 0 3px 8px;top: 0px;left: 0px;}
+.newfilter1 dd{float: left;padding:0 1px 1px 0;}
+.newfilter1 dd a{padding: 2px 8px;color:#aa0009;float:left;white-space: nowrap;text-decoration: none;}
+.newfilter1 dd a:hover{color: #fff;background: #d0000b;}
+.newfilter1 dd a.selt{color:#fff;background:#aa0009 ;}
+
+.newfilter2 {
+	PADDING-BOTTOM: 8px; LINE-HEIGHT: 24px; MARGIN-TOP: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; OVERFLOW: hidden; BORDER-TOP: #ffeaea 1px solid; PADDING-TOP: 8px
+}
+.newfilter2 .ranks {
+	DISPLAY: block; FLOAT: left
+}
+.newfilter2 .ranks DT {
+	DISPLAY: block; FLOAT: left
+}
+.newfilter2 .ranks DD {
+	DISPLAY: block; FLOAT: left
+}
+.newfilter2 .ranks DD A {
+	DISPLAY: block; FLOAT: left
+}
+.newfilter2 .ranks DT {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 8px; PADDING-RIGHT: 0px; PADDING-TOP: 3px
+}
+.newfilter2 .ranks DD A {
+	BORDER-BOTTOM: #ccc 1px solid;  BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; FONT-FAMILY: Tahoma; BACKGROUND: #f2f2f2; BORDER-TOP: #ccc 1px solid; MARGIN-RIGHT: 8px; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 2px; _margin-right: 4px; border-radius: 2px
+}
+.newfilter2 .ranks DD A SPAN {
+	WIDTH: 11px; DISPLAY: inline-block; BACKGROUND: url(img/bg_icon_img.gif) no-repeat 0px 0px; HEIGHT: 11px; MARGIN-RIGHT: 4px
+}
+.newfilter2 .ranks DD A:hover {
+	BACKGROUND: #eeeeee; COLOR: #000; TEXT-DECORATION: none
+}
+.newfilter2 .ranks DD A.h2l {
+	BORDER-BOTTOM: #ed969a 1px solid;  BORDER-LEFT: #ed969a 1px solid; BACKGROUND: #fff0f1; COLOR: #aa0009; BORDER-TOP: #ed969a 1px solid; BORDER-RIGHT: #ed969a 1px solid
+}
+.newfilter2 .ranks DD A.l2h {
+	BORDER-BOTTOM: #ed969a 1px solid; BORDER-LEFT: #ed969a 1px solid; BACKGROUND: #fff0f1; COLOR: #aa0009; BORDER-TOP: #ed969a 1px solid; BORDER-RIGHT: #ed969a 1px solid
+}
+.newfilter2 .ranks DD A.h2l SPAN {
+	BACKGROUND-POSITION: -35px 0px
+}
+.newfilter2 .ranks DD A.l2h SPAN {
+	BACKGROUND-POSITION: -12px 0px
+}
+.newfilter2 .ranks DD A.selt {
+	BORDER-BOTTOM: #ed969a 1px solid;  BORDER-LEFT: #ed969a 1px solid; BACKGROUND: #fff0f1; COLOR: #aa0009; BORDER-TOP: #ed969a 1px solid; BORDER-RIGHT: #ed969a 1px solid
+}
+/*产品列表*/
+.productlist UL {padding-left:30px;
+	OVERFLOW: hidden;
+}
+.productlist UL LI {
+	BORDER-BOTTOM: #f2f2f2 1px solid; PADDING-BOTTOM: 16px; LIST-STYLE-TYPE: none; PADDING-LEFT: 0px; WIDTH: 180px; PADDING-RIGHT: 16px; MARGIN-BOTTOM: 8px; FLOAT: left; HEIGHT: 320px;
+text-align:left;}
+.productlist P{padding-left: 10px;}
+.productlist P.info_2 {
+	PADDING-TOP: 3px
+}
+.productlist P.info_1 {
+	PADDING-TOP: 3px
+}
+.productlist P A {
+	DISPLAY: inline
+}
+.productlist P.info_1 SPAN {
+	PADDING-BOTTOM: 3px; DISPLAY: block
+}
+.productlist P .desc {
+	HEIGHT: 35px; OVERFLOW: hidden
+}
+.productlist P .price {
+	COLOR: #aa0009; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.productlist P .price DEL {
+	PADDING-LEFT: 8px; COLOR: #bbb; FONT-WEIGHT: normal
+}
+.productlist P .point {
+	COLOR: #ff6600
+}
+.productlist P .saleQTY {
+	COLOR: #999
+}
