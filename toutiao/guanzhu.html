@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关注</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	<section class="wrapper">
+		<header>
+			<div class="search"></div>
+			<nav class="g-nav">
+			
+			</nav>
+		</header>
+		<main>
+			<ul class="gz-list">
+
+			</ul>
+		</main>
+		<footer></footer>
+	</section>
+
+	<script type="x-tmpl-mustache" id="tmpList1">
+		{{#list}}
+		<li>
+			<b>{{text}}</b> <input type="button" value="关注" data-type="{{type}}">
+		</li>
+		{{/list}}
+	</script>
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/mustache.js"></script>
+	<script src="js/newstypelist.js"></script>
+	<script type="text/javascript" src="js/storage.js"></script>
+	<script src="js/guanzhu.js"></script>
+
+</body>
+</html>

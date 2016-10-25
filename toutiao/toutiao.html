@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>今日头条</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/90202/19540/57fd9b7cf629d812e497e028.css' rel='stylesheet' type='text/css' />
+	<style type="text/css">
+		/* *{ margin: 0; padding: 0; } 
+		html,body{ height: 100%; }*/
+		body{ display: flex; flex-direction: column; }
+		.mfiy{width:30%;text-align: center;}
+		.search{height:45px;width:100%;background-color: #d23c3b;position:relative;
+		color:white;line-height: 45px;flex-direction: inherit;display: flex;}
+		.search-in{display:block;width:60%;height:auto;border-radius: 5px;
+		position:absolute;top:6px;right:5%;overflow: hidden;z-index: 1;
+		border:1px solid #ddd;background-color: white;height:29px;}
+		header{ height: 81px; background-color: #f5f6f1; }
+		footer{ height: 44px; background-color: #f0f4f3; }
+		main{ flex: 1; overflow-y: auto; position: relative; }
+		/* iscroll初始化时，最外侧的包裹元素最好要是绝对定位，这样iscroll插件才能获取到元素的宽高尺寸 */
+		.list{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #999; overflow-y: auto; }
+		.list ul{ background-color: #fff; }
+		.list li{/* height: 45px; line-height: 45px; text-indent: 50px; */}		
+		.list1 {
+		  width: 100%;
+		}
+		.list1 li {
+		  padding: 15px;
+		}
+		.list1 li a {
+		  font-size: 18px;
+		  color: #272727;
+		  text-decoration: none;
+		}
+		.list1 li span, .list1 li time {
+		  font-size: 13px;
+		}
+		.list1 li.news2 {
+		  display: flex;
+		}
+		.list1 li.news2 .left {
+		  flex: 3;
+		}
+		.list1 li.news2 .right {
+		  flex: 1;
+		}
+		.list1 li.news2 .right img {
+		  width: 95px;
+		  height: 63px;
+		}
+		.g-nav{display: flex;width:100%;}
+		.g-nav a{flex:1;text-align: center;}
+		.fot{display: flex;flex-direction: inherit;}
+		.foot1,.foot2,.foot3{flex:1;text-align: center;
+		font-size: 8px;}
+		.foot1 a,.foot2 a,.foot3 a{display:flex;text-align: center;
+		flex-direction: column;}
+		.iconfont{text-align: center;padding: 6px;}
+		i.icon-sousuo{position:absolute;left:35%;top:-6px;color:grey;
+		z-index:100;display: block;}
+	</style>
+	<link rel="stylesheet" type="text/css" 
+		href="iconfont/ux_1476972046_114276/iconfont.css">
+</head>
+<body>
+	<header>
+		<div class="search">
+			 <p class="mfiy">今日头条</p>
+			 <i class="iconfont icon-sousuo"></i>
+			 <input class="search-in" type="text" placeholder="       搜你想搜的">
+		</div>
+		<nav class="g-nav">
+
+		</nav>
+	</header>
+	<main>
+		<!-- 这里的div高度=父元素高度，使用绝对定位 -->
+		<div id="iscrollWrap" class="list">
+			<!-- 这里的ul高度必须大小父元素，才会使父元素出现滚动条 -->
+			<ul class="list1">
+				
+			</ul>
+		</div>
+	</main>
+	<footer>
+		<section class="fot">
+		<div class="foot1"><a href="#"><i class="iconfont icon-yingsaitong"></i>
+			首页</a></div>
+		<div class="foot2"><a href="#"><i class="iconfont icon-guanzhu"></i>
+			关注</a></div>
+		<div class="foot3"><a href="#"><i class="iconfont icon-shezhi"></i>
+			设置</a></div>
+		</section>
+	</footer>
+	<script type="x-tmpl-mustache" id="tmpList1">
+		<li>
+			<h2><a href="{{url}}">{{title}}</a></h2>
+			<p>
+				<span>来源</span> <time>{{ctime}}</time>
+			</p>
+		</li>
+	</script>
+
+	<script type="x-tmpl-mustache" id="tmpList2">
+		<li class="news2">
+			<div class="left">
+				<h2><a href="{{url}}">{{title}}</a></h2>
+				<p>
+					<span>来源</span> <time>{{ctime}}</time>
+				</p>
+			</div>
+			<div class="right">
+				<img src="{{picUrl}}" alt="">
+			</div>					
+		</li>
+	</script>
+	
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/mustache.js"></script>
+	<script src="js/iscroll-probe.js"></script>
+	<script type="text/javascript" src="js/storage.js"></script>
+	<script type="text/javascript" src="js/newstypelist.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		$(".search-in").on("focus",function(){
+			$("i.icon-sousuo").hide();
+			$(".search-in").attr("placeholder","");
+		})
+		.on("blur",function(){
+			$("i.icon-sousuo").show();
+			$(".search-in").attr("placeholder","       搜你想搜的")
+		})
+		;
+	</script>
+</body>
+</html>

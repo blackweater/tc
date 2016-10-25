@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+	<style type="text/css">
+		*{ margin: 0; padding: 0; }
+		html,body{ height: 100%; }
+		body{ display: flex; flex-direction: column; }
+		header,footer{ height: 50px; background-color: green; }
+		footer{ background-color: lightseagreen; }
+		main{ flex: 1; overflow-y: auto; position: relative; }
+		/* iscroll初始化时，最外侧的包裹元素最好要是绝对定位，这样iscroll插件才能获取到元素的宽高尺寸 */
+		.list{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #999; overflow-y: auto; }
+		.list ul{ background-color: #fff; }
+		.list li{/*  height: 45px; line-height: 45px; text-indent: 50px;  */}
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			var myScroll = new IScroll('#list1', { bounceEasing: 'elastic', bounceTime: 1200 });
+			myScroll.on("scrollEnd",function(){
+				console.info(this);
+			});
+		}
+	</script>
+	<header></header>
+	<main>
+		<!-- 这里的div高度=父元素高度，使用绝对定位 -->
+		<div id="list1" class="list">
+			<!-- 这里的ul高度必须大小父元素，才会使父元素出现滚动条 -->
+			<ul class="list1">
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+				<li>Pretty row 1</li>
+			</ul>
+		</div>
+	</main>
+	<footer></footer>
+	<script type="x-tmpl-mustache" id="tmpList1">
+		{{#result}}
+		<li>
+			<h2><a href="{{url}}">{{title}}</a></h2>
+			<p>
+				<span>来源</span> <time>{{ctime}}</time>
+			</p>
+		</li>
+		{{/result}}
+	</script>
+
+	<script type="x-tmpl-mustache" id="tmpList2">
+		{{#result}}
+		<li class="news2">
+			<div class="left">
+				<h2><a href="{{url}}">{{title}}</a></h2>
+				<p>
+					<span>来源</span> <time>{{ctime}}</time>
+				</p>
+			</div>
+			<div class="right">
+				<img src="{{picUrl}}" alt="">
+			</div>					
+		</li>
+		{{/result}}
+	</script>
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/mustache.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

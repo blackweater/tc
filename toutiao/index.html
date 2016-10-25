@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/index.css" />
+	
+</head>
+
+<body>
+	<section class="wrapper">
+		<header>
+			<div class="search"></div>
+			<nav class="g-nav">
+				<a href="#">国际</a>
+				<a href="#">国内</a>
+				<a href="#">微信</a>
+			</nav>
+		</header>
+		<main>
+			<section class="scroll-wrapper" id="iscrollWrap">
+				<ul class="list1">
+	
+				</ul>
+			</section>
+		</main>
+		<footer>
+			
+		</footer>
+	</section>
+	
+
+	<script type="x-tmpl-mustache" id="tmpList1">
+		<li>
+			<h2><a href="{{url}}">{{title}}</a></h2>
+			<p>
+				<span>来源</span> <time>{{ctime}}</time>
+			</p>
+		</li>
+	</script>
+
+	<script type="x-tmpl-mustache" id="tmpList2">
+		<li class="news2">
+			<div class="left">
+				<h2><a href="{{url}}">{{title}}</a></h2>
+				<p>
+					<span>来源</span> <time>{{ctime}}</time>
+				</p>
+			</div>
+			<div class="right">
+				<img src="{{picUrl}}" alt="">
+			</div>					
+		</li>
+	</script>
+	<!-- <script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/mustache.js"></script> -->
+	<script src="js/iscroll.js"></script>
+	<!-- <script src="js/index.js"></script> -->
+	<script type="text/javascript">
+		window.onload = function(){
+			var myScroll = new IScroll('#iscrollWrap', { bounceEasing: 'elastic', bounceTime: 1200 });
+			myScroll.on("scrollEnd",function(){
+				console.info(this);
+			});
+		}
+	</script>
+</body>
+</html>
